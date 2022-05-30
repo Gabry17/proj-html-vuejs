@@ -28,7 +28,7 @@ export default {
 .banner{
     text-align: center;
     height: 600px;
-    position: relative;
+    margin-bottom: 10rem;
     .text{
         margin: 6em;
     }
@@ -40,7 +40,6 @@ export default {
             padding: 1em;
             border-radius: 10px;
             box-shadow: 0 18px 14px -14px $gray-chateau-color;
-            text-align: center;
         }
     }
 }

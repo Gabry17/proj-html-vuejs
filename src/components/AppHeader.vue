@@ -28,11 +28,11 @@ header {
   color: $white-color;
   .container {
     max-width: 1200px;
-    width: 60%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     line-height: 50px;
+    width: $project-width;
+    margin: $project-margin;
   }
 }
 </style>

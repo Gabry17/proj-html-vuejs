@@ -3,16 +3,22 @@
     <!-- header -->
     <AppHeader />
     <!-- /header -->
+    
+    <!-- main -->
+    <AppMainTop />
+    <!-- /main -->
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMainTop from './components/AppMainTop.vue';
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    AppMainTop
   }
 }
 </script>
