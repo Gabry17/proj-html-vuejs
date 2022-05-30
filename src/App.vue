@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    <!-- header -->
     <AppHeader />
+    <!-- /header -->
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from './components/AppHeader.vue';
 
 export default {
   name: 'App',

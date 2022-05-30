@@ -1,0 +1,47 @@
+<template>
+  <div class="banner">
+      <div class="text">
+          <h1>ciao sono h1</h1>
+      <p>ciao sono p</p>
+      <button>clicca qui</button>
+      </div>
+      <div class="image">
+          <div class="left-img">
+              <img src="../assets/img/home-6-hero-left-person.png" alt="person">
+          </div>
+          <div class="right-img">
+              <img class="poster-image" src="../assets/img/home-6-hero-poster-final.jpg" alt="meeting person">
+              <img src="../assets/img/home-6-service-image-04.png" alt="person">
+          </div>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+    name: "AppBanner"
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../style/variable";
+.banner{
+    text-align: center;
+    height: 600px;
+    position: relative;
+    .text{
+        margin: 6em;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        .poster-image{
+            background-color: white;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 18px 14px -14px $gray-chateau-color;
+            text-align: center;
+        }
+    }
+}
+</style>
