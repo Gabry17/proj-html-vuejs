@@ -139,7 +139,6 @@ export default {
         .services-bottom {
           box-shadow: 5px 5px 25px gray;
           margin-bottom: 1em;
-          
           img {
             width: 100%;
             padding-right: 2em;
