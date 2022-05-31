@@ -2,7 +2,7 @@
   <div class="bottom">
       <div class="title">
           <p>wanna transform your life?</p>
-          <h2>Glad to Help You Learn</h2>
+          <h2>Glad to <span>Help You</span> Learn</h2>
       </div>
       <div class="content">
           <div class="service">
@@ -30,7 +30,7 @@
           <img src="../assets/img/home-6-services-image-768x308.png" alt="people work">
       </div>
       <div class="text">
-          <p>Start today for getting Online Certification</p>
+          <p>Start today for getting <span>Online Certification</span></p>
           <h3>You can be your own guiding star with our help</h3>
           <button>Get started now</button>
       </div>
@@ -53,6 +53,10 @@ export default {
         padding: 2em;
         p{
             margin: .5em 0;
+            color: $gray-chateau-color;
+        }
+        span{
+            color: $mountain-meadow-color;
         }
     }
     .content{
@@ -66,6 +70,9 @@ export default {
             }
             & h3{
                 margin: .3em 0;
+            }
+            p{
+                color: $gray-chateau-color;
             }
         }
     }
@@ -83,6 +90,9 @@ export default {
         padding: 5em;
         button{
             margin-top: 1.5em;
+        }
+        span{
+            color: $mountain-meadow-color;
         }
     }
 }

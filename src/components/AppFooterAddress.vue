@@ -14,7 +14,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variable';
 .contact{
     margin: 0.5em 0;
+    color: $gray-chateau-color;
 }
 </style>

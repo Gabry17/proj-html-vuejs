@@ -2,29 +2,29 @@
   <div class="center-bottom">
     <div class="title">
       <p>enjoy reading on maxcoach</p>
-      <h2>Latest on Our Blogs</h2>
+      <h2>Latest on <span>Our Blogs</span></h2>
     </div>
     <div class="blogs">
       <div class="card">
         <img src="../assets/img/artist-blog-03-480x325.jpeg" alt="artist" />
         <p>artist</p>
         <h3>Brush Strokes Energize Trees in Paintings</h3>
-        <span>date </span>
-        <span>views</span>
+        <span><i class="fas fa-calendar"></i> May, 15, 2020 </span>
+        <span><i class="far fa-eye"></i> 200 views</span>
       </div>
       <div class="card">
         <img src="../assets/img/artist-blog-01-480x325.jpg" alt="artist" />
         <p>artist</p>
         <h3>Pocket-Sized Notebooks Hold Miniature Paintings</h3>
-        <span>date </span>
-        <span>views</span>
+        <span><i class="fas fa-calendar"></i> May, 15, 2020 </span>
+        <span><i class="far fa-eye"></i> 300 views</span>
       </div>
       <div class="card">
         <img src="../assets/img/artist-blog-02-480x325.jpg" alt="artist" />
         <p>artist</p>
         <h3>Connection Between Self-Portraits and Identity</h3>
-        <span>date </span>
-        <span>views</span>
+        <span><i class="fas fa-calendar"></i> May, 15, 2020 </span>
+        <span><i class="far fa-eye"></i> 400 views</span>
       </div>
     </div>
   </div>
@@ -45,6 +45,12 @@ export default {
     width: $project-width;
     margin: $project-margin;
     text-align: center;
+    p{
+      color: $gray-chateau-color;
+    }
+    span{
+      color: $mountain-meadow-color;
+    }
   }
   .blogs {
     width: $project-width;
@@ -56,9 +62,14 @@ export default {
       margin-right: 1em;
       img {
         width: 100%;
+        margin-bottom: 0.5em;
       }
-      p {
-        margin-top: 0.5em;
+      p{
+        color: $gray-chateau-color;
+      }
+      span {
+        color: $gray-chateau-color;
+        margin-right: 1em;
       }
       h3 {
         margin: 0.5em 0;

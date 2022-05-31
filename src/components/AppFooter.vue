@@ -108,6 +108,7 @@ footer {
       width: calc(100% / 2);
       .icon i {
         margin: 1em 1.5em 0 0;
+        color: $gray-chateau-color;
       }
     }
     .right {
@@ -123,6 +124,7 @@ footer {
   .copyright {
     text-align: center;
     margin-top: 2em;
+    color: $gray-chateau-color;
   }
 }
 </style>

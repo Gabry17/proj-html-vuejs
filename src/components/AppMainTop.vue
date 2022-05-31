@@ -2,9 +2,12 @@
   <div class="main-top">
     <div class="top">
       <div class="text">
-        <h2>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h2>
-        <p>fannie moreno</p>
-        <p>/Founder & CEO</p>
+        <h2>
+          Let passion and determination be the guide along the way and develop
+          at your own pace that's comfortable.
+        </h2>
+        <p class="first-p">fannie moreno</p>
+        <span>/Founder & CEO</span>
       </div>
       <div class="flex">
         <div class="info">
@@ -85,15 +88,27 @@
         </div>
       </div>
       <div class="start">
-          <h4>together we can create</h4>
-          <h2>Services We Can Provide For My Clients.</h2>
-          <ul>
-              <li><i class="fa-solid fa-check"></i> Select & customize courses to your preferences</li>
-              <li><i class="fa-solid fa-check"></i> Change the tutor and make arrangements</li>
-              <li><i class="fa-solid fa-check"></i> Participate in events to join others</li>
-              <li><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</li>
-          </ul>
-          <button>Get started for free</button>
+        <h4>together we can create</h4>
+        <h2>Services We <span>Can Provide</span> For My Clients.</h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i> Select & customize courses to your
+            preferences
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i> Change the tutor and make
+            arrangements
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i> Participate in events to join
+            others
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i> Get the desired certificate
+            delivered at house
+          </li>
+        </ul>
+        <button>Get started for free</button>
       </div>
     </div>
   </div>
@@ -111,11 +126,20 @@ export default {
   width: $project-width;
   margin: $project-margin;
   .text {
-    padding: 3em;
+    padding: 10em 0 2em;
     text-align: center;
     h2 {
       margin-bottom: 1em;
     }
+    .first-p {
+      margin-bottom: 0.5em;
+    }
+    span {
+      color: $silver-color;
+    }
+  }
+  .top p {
+    text-transform: uppercase;
   }
 
   .flex {
@@ -123,6 +147,10 @@ export default {
     text-align: center;
     .info {
       width: calc(100% / 4);
+      div{
+        font-size: 2em;
+        color: $mountain-meadow-color;
+      }
     }
   }
 
@@ -137,11 +165,11 @@ export default {
         margin-right: 1em;
         .services-top,
         .services-bottom {
-          box-shadow: 5px 5px 20px rgb(208, 208, 208);
+          box-shadow: 5px 5px 20px #d0d0d0;
           margin-bottom: 1em;
           img {
             width: 100%;
-            padding: .5em;
+            padding: 0.5em;
           }
           .services-text {
             padding: 0.5em;
@@ -149,16 +177,24 @@ export default {
         }
       }
 
-      .services-right{
-          margin-top: 2em;
+      .services-right {
+        margin-top: 2em;
       }
     }
 
-    .start{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .start {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2,
+      li{
+        margin: 1em 0;
+      }
+      span,
+      i{
+        color: $mountain-meadow-color;
+      }
     }
   }
 }

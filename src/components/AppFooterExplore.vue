@@ -14,8 +14,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variable';
 
 .info {
   width: calc(100% / 2);
+  color: $gray-chateau-color;
 }
 </style>

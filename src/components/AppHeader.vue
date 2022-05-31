@@ -92,14 +92,14 @@ header {
         margin-right: 0.5em;
       }
       .input {
-        background-color: white;
+        background-color: $white-color;
         border-radius: 5px;
         padding: 0 .5em;
         input {
           border: none;
         }
         label {
-          color: green;
+          color: $mountain-meadow-color;
         }
       }
     }

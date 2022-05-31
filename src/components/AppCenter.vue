@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <div class="main">
-      <h2>Why People Talk About MaxCoach?</h2>
+      <h2>Why People Talk About <span>MaxCoach</span>?</h2>
       <div class="info">
         <img src="../assets/img/testimonial-avata-02.jpg" alt="freelancer" />
         <div class="text">
@@ -11,9 +11,9 @@
             quae illum quaerat officiis! Aperiam tempora sed beatae voluptate,
             optio maiores libero!
           </p>
-          <p>
-            MINA HOLLAGE <br />
-            /freelancer
+          <p class="name">
+            mina hollage <br />
+            <span>/freelancer</span>
           </p>
         </div>
       </div>
@@ -46,6 +46,9 @@ export default {
     h2 {
       margin-bottom: 2em;
       text-align: center;
+      span{
+        color: $mountain-meadow-color;
+      }
     }
     .info {
       display: flex;
@@ -58,6 +61,14 @@ export default {
       }
       .text{
           width: 60%;
+          .name{
+            text-transform: uppercase;
+            margin-top: 1em;
+            span{
+              color: $gray-chateau-color;
+              text-transform: lowercase;
+            }
+          }
       }
     }
     .logo{

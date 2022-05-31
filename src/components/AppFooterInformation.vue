@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div>{{ informationObj.information }}</div>
+      <div class="information">{{ informationObj.information }}</div>
   </div>
 </template>
 
@@ -14,5 +14,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variable';
 
+.information{
+    color: $gray-chateau-color;
+}
 </style>
