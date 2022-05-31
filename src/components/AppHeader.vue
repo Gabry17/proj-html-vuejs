@@ -1,8 +1,22 @@
 <template>
   <header>
     <div class="container">
-      <div class="logo">logo</div>
-      <div class="list-menu">menu menu menu menu</div>
+      <div class="logo">
+        <img src="../assets/img/dark-logo.png" alt="" />
+      </div>
+      <div class="list-menu">
+        <AppHeaderMenu
+          v-for="(item, index) in menu"
+          :key="index"
+          :menuObj="item"
+        />
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user-circle"></i>
+        <div class="input">
+          <input id="search" type="text" placeholder="Search..." />
+          <label for="search" id="search"><i class="fas fa-search"></i></label>
+        </div>
+      </div>
     </div>
     <!-- banner -->
     <AppBanner />
@@ -11,13 +25,42 @@
 </template>
 
 <script>
-import AppBanner from './AppBanner.vue';
+import AppBanner from "./AppBanner";
+import AppHeaderMenu from "./AppHeaderMenu";
 
 export default {
   name: "AppHeader",
   components: {
-    AppBanner
-  }
+    AppBanner,
+    AppHeaderMenu,
+  },
+  props: {
+    headerObj: Object,
+  },
+  data() {
+    return {
+      menu: [
+        {
+          header: "Home",
+        },
+        {
+          header: "Pages",
+        },
+        {
+          header: "Courses",
+        },
+        {
+          header: "Features",
+        },
+        {
+          header: "Blog",
+        },
+        {
+          header: "Shop",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -26,13 +69,39 @@ export default {
 header {
   background-color: $port-gore-color;
   color: $white-color;
+  padding: 1em 0;
   .container {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    line-height: 50px;
+    line-height: 30px;
     width: $project-width;
     margin: $project-margin;
+    .logo{
+      width: 20%;
+      img{
+        width: 100%;
+      }
+    }
+    .list-menu {
+      display: flex;
+      width: 70%;
+      & > i {
+        line-height: 30px;
+        margin-right: 0.5em;
+      }
+      .input {
+        background-color: white;
+        border-radius: 5px;
+        padding: 0 .5em;
+        input {
+          border: none;
+        }
+        label {
+          color: green;
+        }
+      }
+    }
   }
 }
 </style>

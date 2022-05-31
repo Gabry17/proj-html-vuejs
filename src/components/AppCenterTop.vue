@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="btn">
-        <button>click</button>
+        <button>View all courses <i class="fas fa-long-arrow-alt-right"></i></button>
     </div>
   </div>
 </template>

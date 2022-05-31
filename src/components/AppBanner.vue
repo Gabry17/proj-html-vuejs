@@ -1,9 +1,9 @@
 <template>
   <div class="banner">
       <div class="text">
-          <h1>ciao sono h1</h1>
-      <p>ciao sono p</p>
-      <button>clicca qui</button>
+          <h1>Learn At Your Own Pace!</h1>
+      <p>Get teamed up with people of the same will.</p>
+      <button>Get started for free</button>
       </div>
       <div class="image">
           <div class="left-img">

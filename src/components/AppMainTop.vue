@@ -2,9 +2,9 @@
   <div class="main-top">
     <div class="top">
       <div class="text">
-        <h2>ciao sono un h2</h2>
-        <p>ciao coa cao</p>
-        <p>ciao</p>
+        <h2>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h2>
+        <p>fannie moreno</p>
+        <p>/Founder & CEO</p>
       </div>
       <div class="flex">
         <div class="info">
@@ -12,16 +12,16 @@
           <p>finished sessions</p>
         </div>
         <div class="info">
-          <div>1926</div>
-          <p>finished sessions</p>
+          <div>3.092+</div>
+          <p>enrolled learners</p>
         </div>
         <div class="info">
-          <div>1926</div>
-          <p>finished sessions</p>
+          <div>200</div>
+          <p>online instructors</p>
         </div>
         <div class="info">
-          <div>1926</div>
-          <p>finished sessions</p>
+          <div>100%</div>
+          <p>satisfaction rate</p>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
               alt="graphic design"
             />
             <div class="services-text">
-              <h3>Graphic Design</h3>
+              <h3>Idea Discussion</h3>
               <p>
                 Lorem, ipsum dolor que excepturi debitis, rem in dolores labore,
                 earum quod!
@@ -58,7 +58,7 @@
         <div class="services-right">
           <div class="services-top">
             <div class="services-text">
-              <h3>Graphic Design</h3>
+              <h3>Business Administration</h3>
               <p>
                 Lorem, ipsum dolor que excepturi debitis, rem in dolores labore,
                 earum quod!
@@ -75,7 +75,7 @@
               alt="graphic design"
             />
             <div class="services-text">
-              <h3>Graphic Design</h3>
+              <h3>Web Development</h3>
               <p>
                 Lorem, ipsum dolor que excepturi debitis, rem in dolores labore,
                 earum quod!
@@ -86,14 +86,14 @@
       </div>
       <div class="start">
           <h4>together we can create</h4>
-          <h2>services we can provide for my clients</h2>
+          <h2>Services We Can Provide For My Clients.</h2>
           <ul>
-              <li><i class="fa-solid fa-check"></i> ahahhhhashururuih</li>
-              <li><i class="fa-solid fa-check"></i> ewuecuuuncj</li>
-              <li><i class="fa-solid fa-check"></i> cjbkwejjkw</li>
-              <li><i class="fa-solid fa-check"></i> crjkjrccejn</li>
+              <li><i class="fa-solid fa-check"></i> Select & customize courses to your preferences</li>
+              <li><i class="fa-solid fa-check"></i> Change the tutor and make arrangements</li>
+              <li><i class="fa-solid fa-check"></i> Participate in events to join others</li>
+              <li><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</li>
           </ul>
-          <button>click</button>
+          <button>Get started for free</button>
       </div>
     </div>
   </div>
@@ -133,15 +133,15 @@ export default {
       display: flex;
       .services-left,
       .services-right {
-        width: calc(100% / 3);
+        width: 40%;
         margin-right: 1em;
         .services-top,
         .services-bottom {
-          box-shadow: 5px 5px 25px gray;
+          box-shadow: 5px 5px 20px rgb(208, 208, 208);
           margin-bottom: 1em;
           img {
             width: 100%;
-            padding-right: 2em;
+            padding: .5em;
           }
           .services-text {
             padding: 0.5em;
@@ -150,12 +150,12 @@ export default {
       }
 
       .services-right{
-          margin-top: 4em;
+          margin-top: 2em;
       }
     }
 
     .start{
-        width: calc(100% / 2);
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -17,23 +17,22 @@
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMainTop from './components/AppMainTop.vue';
-import AppMainCenter from './components/AppMainCenter.vue';
-import AppMainBottom from './components/AppMainBottom.vue';
-import AppFooter from './components/AppFooter.vue';
-
+import AppHeader from "./components/AppHeader.vue";
+import AppMainTop from "./components/AppMainTop.vue";
+import AppMainCenter from "./components/AppMainCenter.vue";
+import AppMainBottom from "./components/AppMainBottom.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
     AppMainTop,
     AppMainCenter,
     AppMainBottom,
-    AppFooter
+    AppFooter,
   }
-}
+};
 </script>
 
 <style lang="scss">

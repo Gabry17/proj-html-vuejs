@@ -15,14 +15,14 @@
       <div class="card">
         <img src="../assets/img/artist-blog-01-480x325.jpg" alt="artist" />
         <p>artist</p>
-        <h3>Brush Strokes Energize Trees in Paintings</h3>
+        <h3>Pocket-Sized Notebooks Hold Miniature Paintings</h3>
         <span>date </span>
         <span>views</span>
       </div>
       <div class="card">
         <img src="../assets/img/artist-blog-02-480x325.jpg" alt="artist" />
         <p>artist</p>
-        <h3>Brush Strokes Energize Trees in Paintings</h3>
+        <h3>Connection Between Self-Portraits and Identity</h3>
         <span>date </span>
         <span>views</span>
       </div>
