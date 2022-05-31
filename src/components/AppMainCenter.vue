@@ -4,6 +4,7 @@
     <AppCenterTop />
     <!-- /top -->
     <!-- center -->
+    <AppCenter />
     <!-- /center -->
     <!-- bottom -->
     <!-- /bottom -->
@@ -12,11 +13,13 @@
 
 <script>
 import AppCenterTop from './AppCenterTop';
+import AppCenter from './AppCenter';
 
 export default {
   name: "AppMainCenter",
   components: {
-      AppCenterTop
+      AppCenterTop,
+      AppCenter
   }
 };
 </script>
