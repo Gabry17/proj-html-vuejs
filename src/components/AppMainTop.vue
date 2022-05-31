@@ -88,10 +88,10 @@
           <h4>together we can create</h4>
           <h2>services we can provide for my clients</h2>
           <ul>
-              <li>ahahhhhashururuih</li>
-              <li>ewuecuuuncj</li>
-              <li>cjbkwejjkw</li>
-              <li>crjkjrccejn</li>
+              <li><i class="fa-solid fa-check"></i> ahahhhhashururuih</li>
+              <li><i class="fa-solid fa-check"></i> ewuecuuuncj</li>
+              <li><i class="fa-solid fa-check"></i> cjbkwejjkw</li>
+              <li><i class="fa-solid fa-check"></i> crjkjrccejn</li>
           </ul>
           <button>click</button>
       </div>

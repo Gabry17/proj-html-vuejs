@@ -9,6 +9,10 @@
     <AppMainCenter />
     <AppMainBottom />
     <!-- /main -->
+
+    <!-- footer -->
+    <AppFooter />
+    <!-- /footer -->
   </div>
 </template>
 
@@ -17,6 +21,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMainTop from './components/AppMainTop.vue';
 import AppMainCenter from './components/AppMainCenter.vue';
 import AppMainBottom from './components/AppMainBottom.vue';
+import AppFooter from './components/AppFooter.vue';
 
 
 export default {
@@ -25,7 +30,8 @@ export default {
     AppHeader,
     AppMainTop,
     AppMainCenter,
-    AppMainBottom
+    AppMainBottom,
+    AppFooter
   }
 }
 </script>

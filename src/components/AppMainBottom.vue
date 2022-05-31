@@ -47,9 +47,7 @@ export default {
 @import '../style/variable';
 
 .bottom{
-    background-color: #f4f4f4;
     padding-top: 4em;
-    height: 700px;
     .title{
         text-align: center;
         padding: 2em;
