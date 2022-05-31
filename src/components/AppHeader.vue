@@ -79,6 +79,7 @@ header {
     margin: $project-margin;
     .logo{
       width: 20%;
+      height: 30px;
       img{
         width: 100%;
       }

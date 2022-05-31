@@ -4,11 +4,11 @@
       <div class="left">
         <h4>Address</h4>
         <div class="contact">
-          <ul>
-            <li>382 ne 191 shs dhdh dhd</li>
-            <li>number</li>
-            <li>email</li>
-          </ul>
+          <AppFooterAddress
+            v-for="(item, index) in info"
+            :key="index"
+            :addressObj="item"
+          />
         </div>
         <div class="icon">
           <i class="fab fa-facebook-square"></i>
@@ -20,35 +20,75 @@
       <div class="right">
         <div class="explore">
           <h4>Explore</h4>
-          <ul>
-            <li>Start here</li>
-            <li>Blog</li>
-            <li>About us</li>
-            <li>Success story</li>
-            <li>Courses</li>
-            <li>Contact us</li>
-          </ul>
+          <div class="components">
+            <AppFooterExplore
+              v-for="(item, index) in info"
+              :key="index"
+              :exploreObj="item"
+            />
+          </div>
         </div>
         <div class="information">
-            <h4>Information</h4>
-          <ul>
-            <li>Membership</li>
-            <li>Purchase guide</li>
-            <li>Privacy policy</li>
-            <li>Terms of services</li>
-          </ul>
+          <h4>Information</h4>
+          <AppFooterInformation
+            v-for="(item, index) in info"
+            :key="index"
+            :informationObj="item"
+          />
         </div>
       </div>
     </div>
     <div class="copyright">
-        <span><i class="fas fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</span>
+      <span
+        ><i class="fas fa-copyright"></i> 2020 Maxcoach. All Rights
+        Reserved</span
+      >
     </div>
   </footer>
 </template>
 
 <script>
+import AppFooterAddress from "./AppFooterAddress.vue";
+import AppFooterExplore from "./AppFooterExplore.vue";
+import AppFooterInformation from "./AppFooterInformation.vue";
 export default {
+  components: {
+    AppFooterAddress,
+    AppFooterExplore,
+    AppFooterInformation,
+  },
   name: "AppFooter",
+  data() {
+    return {
+      info: [
+        {
+          contact: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+          explore: "Start here",
+          information: "Membership",
+        },
+        {
+          contact: "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+          explore: "Success story",
+          information: "Purchase guide",
+        },
+        {
+          contact: "support@maxcoach.com",
+          explore: "Blog",
+          information: "Privacy policy",
+        },
+        {
+          explore: "courses",
+          information: "Terms of services",
+        },
+        {
+          explore: "About us",
+        },
+        {
+          explore: "Contact us",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -61,32 +101,28 @@ footer {
     width: $project-width;
     margin: $project-margin;
     display: flex;
-    h4,
-    li {
+    h4 {
       margin: 0.5em 0;
     }
     .left {
-        width: calc(100% /2);
+      width: calc(100% / 2);
       .icon i {
         margin: 1em 1.5em 0 0;
       }
     }
-    .right{
-        display: flex;
-        .explore{
-        ul{
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                width: calc(100% / 2);
-            }
+    .right {
+      display: flex;
+      .explore {
+        .components {
+          display: flex;
+          flex-wrap: wrap;
         }
-    }
+      }
     }
   }
-  .copyright{
-      text-align: center;
-      margin-top: 2em;
+  .copyright {
+    text-align: center;
+    margin-top: 2em;
   }
 }
 </style>
