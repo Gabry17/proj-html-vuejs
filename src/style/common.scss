@@ -26,3 +26,20 @@ button{
     padding: .7em 2em;
     border-radius: 5px;
 }
+
+.d-flex{
+    display: flex;
+}
+
+.green{
+    color: $mountain-meadow-color;
+}
+
+.bg-white{
+    background-color: $white-color;
+}
+
+.dimension{
+    width: $project-width;
+    margin: $project-margin;
+}

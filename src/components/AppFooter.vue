@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container-foot">
+    <div class="container-foot dimension d-flex">
       <div class="left">
         <h4>Address</h4>
         <div class="contact">
@@ -17,10 +17,10 @@
           <i class="fab fa-linkedin"></i>
         </div>
       </div>
-      <div class="right">
+      <div class="right d-flex">
         <div class="explore">
           <h4>Explore</h4>
-          <div class="components">
+          <div class="components d-flex">
             <AppFooterExplore
               v-for="(item, index) in info"
               :key="index"
@@ -97,28 +97,19 @@ export default {
 footer {
   background-color: $hint-of-red-color;
   padding: 2em 0;
-  .container-foot {
-    width: $project-width;
-    margin: $project-margin;
-    display: flex;
-    h4 {
-      margin: 0.5em 0;
+  h4 {
+    margin: 0.5em 0;
+  }
+  .left {
+    width: calc(100% / 2);
+    .icon i {
+      margin: 1em 1.5em 0 0;
+      color: $gray-chateau-color;
     }
-    .left {
-      width: calc(100% / 2);
-      .icon i {
-        margin: 1em 1.5em 0 0;
-        color: $gray-chateau-color;
-      }
-    }
-    .right {
-      display: flex;
-      .explore {
-        .components {
-          display: flex;
-          flex-wrap: wrap;
-        }
-      }
+  }
+  .explore {
+    .components {
+      flex-wrap: wrap;
     }
   }
   .copyright {

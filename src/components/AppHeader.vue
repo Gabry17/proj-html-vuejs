@@ -1,10 +1,10 @@
 <template>
   <header>
-    <div class="container">
+    <div class="container d-flex dimension">
       <div class="logo">
         <img src="../assets/img/dark-logo.png" alt="" />
       </div>
-      <div class="list-menu">
+      <div class="list-menu d-flex">
         <AppHeaderMenu
           v-for="(item, index) in menu"
           :key="index"
@@ -12,9 +12,9 @@
         />
         <i class="fas fa-shopping-cart"></i>
         <i class="fas fa-user-circle"></i>
-        <div class="input">
+        <div class="input bg-white">
           <input id="search" type="text" placeholder="Search..." />
-          <label for="search" id="search"><i class="fas fa-search"></i></label>
+          <label class="green" for="search" id="search"><i class="fas fa-search"></i></label>
         </div>
       </div>
     </div>
@@ -72,11 +72,8 @@ header {
   padding: 1em 0;
   .container {
     max-width: 1200px;
-    display: flex;
     justify-content: space-between;
     line-height: 30px;
-    width: $project-width;
-    margin: $project-margin;
     .logo{
       width: 20%;
       height: 30px;
@@ -85,21 +82,16 @@ header {
       }
     }
     .list-menu {
-      display: flex;
       width: 70%;
       & > i {
         line-height: 30px;
         margin-right: 0.5em;
       }
       .input {
-        background-color: $white-color;
         border-radius: 5px;
         padding: 0 .5em;
         input {
           border: none;
-        }
-        label {
-          color: $mountain-meadow-color;
         }
       }
     }

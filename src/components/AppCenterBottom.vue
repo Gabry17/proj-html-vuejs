@@ -4,7 +4,7 @@
       <p>enjoy reading on maxcoach</p>
       <h2>Latest on <span>Our Blogs</span></h2>
     </div>
-    <div class="blogs">
+    <div class="blogs dimension d-flex">
       <div class="card">
         <img src="../assets/img/artist-blog-03-480x325.jpeg" alt="artist" />
         <p>artist</p>
@@ -42,8 +42,6 @@ export default {
 .center-bottom {
   padding: 4em;
   .title {
-    width: $project-width;
-    margin: $project-margin;
     text-align: center;
     p{
       color: $gray-chateau-color;
@@ -53,9 +51,6 @@ export default {
     }
   }
   .blogs {
-    width: $project-width;
-    margin: $project-margin;
-    display: flex;
     margin-top: 2em;
     .card {
       width: calc(100% / 3);

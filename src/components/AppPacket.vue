@@ -1,7 +1,7 @@
 <template>
   <div class="packet">
     <div class="image">
-      <img :src='require(`../assets/img/${packetObj.image}`)' alt="" />
+      <img :src='require(`../assets/img/${packetObj.image}`)' :alt="packetObj.text" />
     </div>
     <div class="info-course">
       <h3>{{ packetObj.price === 0 ? "Free" : packetObj.price + ".00" }}</h3>

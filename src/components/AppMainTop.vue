@@ -1,5 +1,5 @@
 <template>
-  <div class="main-top">
+  <div class="main-top dimension">
     <div class="top">
       <div class="text">
         <h2>
@@ -11,25 +11,25 @@
       </div>
       <div class="flex">
         <div class="info">
-          <div>1926</div>
+          <div class="green">1926</div>
           <p>finished sessions</p>
         </div>
         <div class="info">
-          <div>3.092+</div>
+          <div class="green">3.092+</div>
           <p>enrolled learners</p>
         </div>
         <div class="info">
-          <div>200</div>
+          <div class="green">200</div>
           <p>online instructors</p>
         </div>
         <div class="info">
-          <div>100%</div>
+          <div class="green">100%</div>
           <p>satisfaction rate</p>
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <div class="services">
+    <div class="bottom d-flex">
+      <div class="services d-flex">
         <div class="services-left">
           <div class="services-top">
             <div class="services-text">
@@ -87,9 +87,11 @@
           </div>
         </div>
       </div>
-      <div class="start">
+      <div class="start d-flex">
         <h4>together we can create</h4>
-        <h2>Services We <span>Can Provide</span> For My Clients.</h2>
+        <h2>
+          Services We <span class="green">Can Provide</span> For My Clients.
+        </h2>
         <ul>
           <li>
             <i class="fa-solid fa-check"></i> Select & customize courses to your
@@ -123,8 +125,6 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variable";
 .main-top {
-  width: $project-width;
-  margin: $project-margin;
   .text {
     padding: 10em 0 2em;
     text-align: center;
@@ -147,18 +147,15 @@ export default {
     text-align: center;
     .info {
       width: calc(100% / 4);
-      div{
+      div {
         font-size: 2em;
-        color: $mountain-meadow-color;
       }
     }
   }
 
   .bottom {
     padding: 6em 0;
-    display: flex;
     .services {
-      display: flex;
       .services-left,
       .services-right {
         width: 40%;
@@ -184,18 +181,16 @@ export default {
 
     .start {
       width: 60%;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       h2,
-      li{
+      li {
         margin: 1em 0;
       }
-      span,
-      i{
+      i {
         color: $mountain-meadow-color;
       }
-      button:hover{
+      button:hover {
         background-color: $port-gore-color;
         color: $white-color;
       }

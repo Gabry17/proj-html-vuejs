@@ -1,10 +1,10 @@
 <template>
-  <div class="center-top">
+  <div class="center-top dimension">
     <div class="text">
       <p>choose a course to get started</p>
-      <h2>Latest Featured <span>Courses</span></h2>
+      <h2>Latest Featured <span class="green">Courses</span></h2>
     </div>
-    <div class="course">
+    <div class="course d-flex">
       <AppPacket
         v-for="(item, index) in course"
         :key="index"
@@ -82,8 +82,6 @@ export default {
 @import "../style/variable";
 
 .center-top {
-  width: $project-width;
-  margin: $project-margin;
   padding: 4em 0;
   .text {
     text-align: center;
@@ -92,11 +90,7 @@ export default {
       color: $dove-gray-color;
     }
   }
-  span {
-    color: $mountain-meadow-color;
-  }
   .course {
-    display: flex;
     flex-wrap: wrap;
   }
   .btn {

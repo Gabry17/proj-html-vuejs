@@ -6,7 +6,7 @@
         <p>Get teamed up with people of the same will.</p>
         <button>Get started for free</button>
       </div>
-      <div class="icon">
+      <div class="icon bg-white">
         <i class="far fa-square"></i>
         <i class="far fa-life-ring"></i>
         <i class="fas fa-book"></i>
@@ -14,11 +14,11 @@
       </div>
     </div>
     <div class="cont-image">
-      <div class="image">
+      <div class="image d-flex">
         <img src="../assets/img/home-6-hero-left-person.png" alt="person" />
         <div class="center-image">
           <img
-            class="poster-image"
+            class="poster-image bg-white"
             src="../assets/img/home-6-hero-poster-final.jpg"
             alt="meeting person"
           />
@@ -59,7 +59,6 @@ export default {
       color: $mountain-meadow-color;
     }
     .icon {
-      background-color: $white-color;
       position: absolute;
       top: 60%;
       right: 0;
@@ -76,14 +75,12 @@ export default {
   .cont-image {
     position: relative;
     .image {
-      display: flex;
       position: absolute;
       left: 10%;
       transform: translate(-10%);
       .center-image {
         position: relative;
         .poster-image {
-          background-color: $white-color;
           padding: 1em;
           border-radius: 10px;
           box-shadow: 0 18px 14px -14px $gray-chateau-color;

@@ -1,8 +1,8 @@
 <template>
-  <div class="center">
-    <div class="main">
-      <h2>Why People Talk About <span>MaxCoach</span>?</h2>
-      <div class="info">
+  <div class="center bg-white">
+    <div class="main dimension">
+      <h2>Why People Talk About <span class="green">MaxCoach</span>?</h2>
+      <div class="info d-flex">
         <img src="../assets/img/testimonial-avata-02.jpg" alt="freelancer" />
         <div class="text">
           <p>
@@ -17,7 +17,7 @@
           </p>
         </div>
       </div>
-      <div class="logo">
+      <div class="logo d-flex">
           <img src="../assets/img/client-logo-colored-01.png" alt="aqua">
           <img src="../assets/img/client-logo-colored-02.png" alt="adroll">
           <img src="../assets/img/client-logo-colored-03.png" alt="">
@@ -38,20 +38,13 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variable";
 .center {
-  background-color: $white-color;
   padding: 4em 0;
   .main {
-    width: $project-width;
-    margin: $project-margin;
     h2 {
       margin-bottom: 2em;
       text-align: center;
-      span{
-        color: $mountain-meadow-color;
-      }
     }
     .info {
-      display: flex;
       align-items: center;
       justify-content: space-around;
       margin-bottom: 3em;
@@ -72,7 +65,6 @@ export default {
       }
     }
     .logo{
-        display: flex;
         justify-content: space-between;
         align-items: center;
         img{

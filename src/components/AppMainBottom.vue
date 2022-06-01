@@ -2,9 +2,9 @@
   <div class="bottom">
       <div class="title">
           <p>wanna transform your life?</p>
-          <h2>Glad to <span>Help You</span> Learn</h2>
+          <h2>Glad to <span class="green">Help You</span> Learn</h2>
       </div>
-      <div class="content">
+      <div class="content dimension">
           <div class="service">
               <i class="fab fa-font-awesome-flag"></i>
               <h3>Idea Discussion</h3>
@@ -26,11 +26,11 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic repellendus! </p>
           </div>
       </div>
-      <div class="image">
+      <div class="image dimension">
           <img src="../assets/img/home-6-services-image-768x308.png" alt="people work">
       </div>
       <div class="text">
-          <p>Start today for getting <span>Online Certification</span></p>
+          <p>Start today for getting <span class="green">Online Certification</span></p>
           <h3>You can be your own guiding star with our help</h3>
           <button>Get started now</button>
       </div>
@@ -55,13 +55,8 @@ export default {
             margin: .5em 0;
             color: $gray-chateau-color;
         }
-        span{
-            color: $mountain-meadow-color;
-        }
     }
     .content{
-        width: $project-width;
-        margin: $project-margin;
         display: flex;
         .service{
             width: calc(100% / 4);
@@ -78,8 +73,6 @@ export default {
     }
     .image{
         text-align: center;
-        width: $project-width;
-        margin: $project-margin;
         padding-top: 4em;
         img{
             width: 100%;
@@ -90,9 +83,6 @@ export default {
         padding: 5em;
         button{
             margin-top: 1.5em;
-        }
-        span{
-            color: $mountain-meadow-color;
         }
     }
 }
