@@ -5,32 +5,11 @@
       <h2>Latest Featured <span>Courses</span></h2>
     </div>
     <div class="course">
-      <div class="packet">
-        <div class="image">
-          <img src="../assets/img/course-02-480x298.jpg" alt="" />
-        </div>
-        <div class="info-course">
-          <h3>price</h3>
-          <p>text text text text</p>
-          <div class="class">
-            <span><i class="fas fa-file-alt"></i> 20 lessons </span>
-            <span><i class="fas fa-user-alt"></i> 50 students</span>
-          </div>
-        </div>
-      </div>
-      <div class="packet">
-        <div class="image">
-          <img src="../assets/img/course-02-480x298.jpg" alt="" />
-        </div>
-        <div class="info-course">
-          <h3>price</h3>
-          <p>text text text text</p>
-          <div class="class">
-            <span><i class="fas fa-file-alt"></i> 20 lessons </span>
-            <span><i class="fas fa-user-alt"></i> 50 students</span>
-          </div>
-        </div>
-      </div>
+      <AppPacket
+        v-for="(item, index) in course"
+        :key="index"
+        :packetObj="item"
+      />
     </div>
     <div class="btn">
       <button>
@@ -41,8 +20,61 @@
 </template>
 
 <script>
+import AppPacket from "./AppPacket.vue";
+
 export default {
   name: "AppCenterTop",
+  components: {
+    AppPacket,
+  },
+  data() {
+    return {
+      course: [
+        {
+          price: 40.0,
+          image: 'course-02-480x298.jpg',
+          text: "Learning to Write as a Professional Author",
+          numberLessons: 20,
+          numberStudents: 50,
+        },
+        {
+          price: 0,
+          image: 'stock-full-hd-03-480x298.jpg',
+          text: "Customer-centric info-Tech Strategies",
+          numberLessons: 24,
+          numberStudents: 769,
+        },
+        {
+          price: 19.0,
+          image: 'stock-full-hd-04-480x298.jpg',
+          text: "Open Programming Courses for Everyone: Python",
+          numberLessons: 17,
+          numberStudents: 62,
+        },
+        {
+          price: 26.0,
+          image: 'stock-full-hd-06-480x298.jpg',
+          text: "Academic Listening and Note-taking",
+          numberLessons: 14,
+          numberStudents: 67,
+        },
+        {
+          price: 39.0,
+          image: 'course-featured-image-01-480x298.jpg',
+          text: "Master jQuery in a Short Period of Time",
+          numberLessons: 6,
+          numberStudents: 51,
+        },
+        {
+          price: 59.0,
+          image: 'stock-full-hd-05-480x298.jpg',
+          text: "Introducion to Javascript for Beginners",
+          numberLessons: 14,
+          numberStudents: 76,
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -60,37 +92,12 @@ export default {
       color: $dove-gray-color;
     }
   }
-  span,
-  h3 {
+  span {
     color: $mountain-meadow-color;
   }
   .course {
     display: flex;
     flex-wrap: wrap;
-    .packet {
-      width: calc(100% / 2);
-      display: flex;
-      align-items: center;
-      margin-top: 3em;
-      padding: 1em;
-      p{
-          margin: 1em 0;
-      }
-      img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-right: 1em;
-      }
-      span{
-          color: $dove-gray-color;
-          margin-right: .5em;
-      }
-    }
-    .packet:hover{
-      background-color: $white-color;
-      border-radius: 5px;
-    }
   }
   .btn {
     text-align: center;
