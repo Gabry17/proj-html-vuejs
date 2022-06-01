@@ -13,24 +13,23 @@
         <i class="fas fa-shopping-cart"></i>
       </div>
     </div>
-    <!-- <div class="image">
-      <div class="left-image">
+    <div class="cont-image">
+      <div class="image">
         <img src="../assets/img/home-6-hero-left-person.png" alt="person" />
+        <div class="center-image">
+          <img
+            class="poster-image"
+            src="../assets/img/home-6-hero-poster-final.jpg"
+            alt="meeting person"
+          />
+          <img
+            class="play"
+            src="../assets/img/icon-youtube-play.png"
+            alt="play"
+          />
+        </div>
       </div>
-      <img
-        class="poster-image"
-        src="../assets/img/home-6-hero-poster-final.jpg"
-        alt="meeting person"
-      />
-      <img
-        class="img-play"
-        src="../assets/img/icon-youtube-play.png"
-        alt="play"
-      />
-      <div class="right-image">
-        <img src="../assets/img/home-6-service-image-04.png" alt="person" />
-      </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -74,33 +73,31 @@ export default {
       }
     }
   }
-  //   .image {
-  //     display: flex;
-  //     justify-content: center;
-  //     position: relative;
-  //     .left-image{
-  //         position: absolute;
-  //         left: 5%;
-  //     }
-  //     .poster-image {
-  //       background-color: $white-color;
-  //       padding: 1em;
-  //       border-radius: 10px;
-  //       box-shadow: 0 18px 14px -14px $gray-chateau-color;
-  //       position: absolute;
-  //       top: 150%;
-  //       left: 50%;
-  //       transform: translate(-50%, -50%);
-  //     }
-  //     .right-image{
-  //         position: absolute;
-  //         right: 5%;
-  //     }
-  //     .img-play {
-  //       position: absolute;
-  //       left: 50%;
-  //       top: 50%;
-  //       transform: translate(-50%, -50%);
-  //     }
+  .cont-image {
+    position: relative;
+    .image {
+      display: flex;
+      position: absolute;
+      left: 10%;
+      transform: translate(-10%);
+      .center-image {
+        position: relative;
+        .poster-image {
+          background-color: $white-color;
+          padding: 1em;
+          border-radius: 10px;
+          box-shadow: 0 18px 14px -14px $gray-chateau-color;
+        }
+        .play {
+          width: 100px;
+          height: auto;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
 }
 </style>
