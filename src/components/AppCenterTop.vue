@@ -72,6 +72,7 @@ export default {
       display: flex;
       align-items: center;
       margin-top: 3em;
+      padding: 1em;
       p{
           margin: 1em 0;
       }
@@ -85,6 +86,10 @@ export default {
           color: $dove-gray-color;
           margin-right: .5em;
       }
+    }
+    .packet:hover{
+      background-color: $white-color;
+      border-radius: 5px;
     }
   }
   .btn {

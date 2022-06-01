@@ -165,7 +165,7 @@ export default {
         margin-right: 1em;
         .services-top,
         .services-bottom {
-          box-shadow: 5px 5px 20px #d0d0d0;
+          box-shadow: 5px 5px 20px lightgray;
           margin-bottom: 1em;
           img {
             width: 100%;
@@ -194,6 +194,10 @@ export default {
       span,
       i{
         color: $mountain-meadow-color;
+      }
+      button:hover{
+        background-color: $port-gore-color;
+        color: $white-color;
       }
     }
   }
